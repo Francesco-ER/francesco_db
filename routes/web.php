@@ -26,7 +26,7 @@ $router->post('/agregar-vendedor', function (Request $request) use ($router){
     ]);
 });
 
-$router->post('/vendedor/{id}', function ($id) use ($router){
+$router->get('/vendedor/{id}', function ($id) use ($router){
     $vendedor = DB::table('vendedor')->where('id', $id)->first();
 
     if($vendedor == null){
