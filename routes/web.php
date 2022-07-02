@@ -1,5 +1,5 @@
 <?php
-
+use Illuminate\Support\Facades\DB;
 /** @var \Laravel\Lumen\Routing\Router $router */
 
 /*
